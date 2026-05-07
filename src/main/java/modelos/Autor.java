@@ -9,5 +9,32 @@ package modelos;
  * @author USER
  */
 public class Autor {
+    private int id;
+    private final String nombre;
+    private final String anioNacimiento;
+
+    public Autor(int id, final String nombre, final String anioNacimiento) {
+        this.id = id;
+        this.nombre = nombre;
+        this.anioNacimiento = anioNacimiento;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getAnioNacimiento() {
+        return anioNacimiento;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+    
+    
     
 }
