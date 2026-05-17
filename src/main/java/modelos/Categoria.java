@@ -5,6 +5,7 @@
 package modelos;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -13,12 +14,12 @@ import java.util.ArrayList;
 public class Categoria {
     private final int id;
     private final String nombre;
-    private ArrayList<Libro> libros;
+    private List<Libro> libros;
 
-    public Categoria(final int id, final String nombre, ArrayList<Libro> libros) {
+    public Categoria(final int id, final String nombre) {
         this.id = id;
         this.nombre = nombre;
-        this.libros = libros;
+        this.libros = new ArrayList<>();
     }
 
     public int getId() {
@@ -29,12 +30,16 @@ public class Categoria {
         return nombre;
     }
 
-    public ArrayList<Libro> getLibros() {
+    public List<Libro> getLibros() {
         return libros;
     }
 
     public void setLibros(ArrayList<Libro> libros) {
         this.libros = libros;
+    }
+    
+    void agregarLibro(Libro L){
+        libros.add(L);
     }
     
 }

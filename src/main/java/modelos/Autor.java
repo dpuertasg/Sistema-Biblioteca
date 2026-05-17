@@ -11,9 +11,9 @@ package modelos;
 public class Autor {
     private int id;
     private final String nombre;
-    private final String anioNacimiento;
+    private final int anioNacimiento;
 
-    public Autor(int id, final String nombre, final String anioNacimiento) {
+    public Autor(int id, final String nombre, final int anioNacimiento) {
         this.id = id;
         this.nombre = nombre;
         this.anioNacimiento = anioNacimiento;
@@ -27,7 +27,7 @@ public class Autor {
         return nombre;
     }
 
-    public String getAnioNacimiento() {
+    public int getAnioNacimiento() {
         return anioNacimiento;
     }
 
